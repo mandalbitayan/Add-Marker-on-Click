@@ -37,17 +37,4 @@ require(["esri/Map","esri/views/MapView","esri/layers/GraphicsLayer","esri/Graph
             graphiclayer.add(graphic)
 
         });
-
-        view.watch("zoom",function(zoom){
-            graphiclayer.graphic.forEach(function(graphic){
-                        graphic.symbol = {
-            type: "simple-marker",
-            color: zoom < 10 ? "blue" : "red",
-            size: 10
-        };
-            })
-        })
-
-        })
-
-    // });
+    });
