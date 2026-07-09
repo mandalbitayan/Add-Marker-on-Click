@@ -27,7 +27,8 @@ require(["esri/Map","esri/views/MapView","esri/layers/GraphicsLayer","esri/Graph
             const symbol = {
                 type :"simple-marker",
                 color:"red",
-                size:10
+                size:10,
+                style:"triangle"
             };
 
             const graphic = new Graphic({
