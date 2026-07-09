@@ -28,12 +28,16 @@ require(["esri/Map","esri/views/MapView","esri/layers/GraphicsLayer","esri/Graph
                 type :"simple-marker",
                 color:"red",
                 size:10,
-                style:"triangle"
+                style:"triangle",
+                outline:{
+                    color:"white",
+                    width:2
+                }
             };
 
             const graphic = new Graphic({
                 geometry:point,
-                symbol:symbol
+                symbol:symbol,
             });
             graphiclayer.add(graphic)
 
